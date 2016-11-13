@@ -1,0 +1,22 @@
+{
+  "name": "Pandora Bookmarks",
+  "version": "1.0",
+  "description": "Restores the bookmark feature on Pandora",
+  "permissions": ["activeTab"],
+  "background": {
+    "scripts": ["bookmarks.js"],
+    "persistent": false
+  },
+  "browser_action": {
+  	"default_title": "Pandora Bookmarks",
+  	"default_icon": "icon.png",
+  	"default_popup": "popup.html"
+  },
+  "content_scripts": [
+  {
+  	"js": ["bookmarks.js"],
+  	"matches": ["https://pandora.com/*"]
+  }],
+
+  "manifest_version": 2
+}
