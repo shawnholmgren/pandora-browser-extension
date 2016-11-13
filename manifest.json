@@ -15,7 +15,7 @@
   "content_scripts": [
   {
   	"js": ["popup.js"],
-  	"matches": ["https://pandora.com/*"]
+  	"matches": ["https://www.pandora.com/*"]
   }],
 
   "manifest_version": 2
