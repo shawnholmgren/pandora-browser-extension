@@ -4,7 +4,7 @@
   "description": "Restores the bookmark feature on Pandora",
   "permissions": ["activeTab"],
   "background": {
-    "scripts": ["bookmarks.js"],
+    "scripts": ["popup.js"],
     "persistent": false
   },
   "browser_action": {
@@ -14,7 +14,7 @@
   },
   "content_scripts": [
   {
-  	"js": ["bookmarks.js"],
+  	"js": ["popup.js"],
   	"matches": ["https://pandora.com/*"]
   }],
 
